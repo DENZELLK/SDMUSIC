@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouPlay Music</title>
+    <link rel="stylesheet" href="YouPlay.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="YouPlay.js" defer></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js"></script>
+
+
+</head>
+<body>
+
+
+
+
+    <div id="g_id_onload"
+     data-client_id="701516064912-e3sot9ups2v0u3a77h07icppcit72o36.apps.googleusercontent.com"
+     data-context="signin"
+     data-ux_mode="popup"
+     data-callback="onSignIn"
+     data-auto_select="true">
+</div>
+
+<div class="g_id_signin" data-type="standard"></div>
+    
+
+
+
+
+    <div class="container">
+        <h1>Music Player</h1>
+        <input type="text" id="search" placeholder="Search for a song...">
+        <button onclick="searchSong()">Search</button>
+        <div id="results"></div>
+        <div id="player"></div>
+        <h2>Playlist</h2>
+        <ul id="playlist"></ul>
+        <h2>History</h2>
+        <ul id="history"></ul>
+    </div>
+</body>
+</html>

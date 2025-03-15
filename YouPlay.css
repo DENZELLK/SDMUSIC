@@ -1,0 +1,70 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #001f3f, #0074D9);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+button {
+    padding: 12px 18px;
+    margin: 8px;
+    border: none;
+    border-radius: 8px;
+    background: #0074D9;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.delete-button, .remove-button {
+    background: #ff4136;
+    color: white;
+}
+
+.delete-button:hover, .remove-button:hover {
+    background: #c70039;
+}
+
+#results, #playlist, #history, #downloads, #favorites {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    list-style: none;
+    text-align: left;
+}
+
+#results div, #playlist li, #history li, #downloads li, #favorites li {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#player {
+    margin-top: 25px;
+}
